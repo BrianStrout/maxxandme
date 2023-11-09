@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "contentful": "^10.6.6",
+    "esbuild": "^0.19.5",
+    "intersection-observer": "^0.12.2",
+    "sass": "^1.69.5"
+  }
+}
