@@ -37,10 +37,6 @@
   --bottom-padding: 150px;
 }
 
-#neighbor--video {
-  display: none;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +48,7 @@
   -webkit-overflow-scrolling: touch;
 }
 
-#site--shell {
+#site__shell {
   width: min(100vw, 1200px);
   height: 100dvh;
   background-color: var(--mmblue);
@@ -88,12 +84,12 @@ body {
 //   -webkit-transform: translate3d(0, 0, 0);
 // }
 
-.ul--container {
+.ul__container {
   display: inline;
   width: 100%;
   background-color: #534f16;
 
-  .ul--inline {
+  .ul__inline {
     li {
       display: inline;
       font-size: 1.5rem;
@@ -117,12 +113,12 @@ body {
   width: 100%;
   height: 2rem;
 }
-.mini--spacer {
+.mini__spacer {
   position: relative;
   width: 100%;
   height: 0.75rem;
 }
-.formatted--text {
+.formatted__text {
   color: var(--BFI-white);
   font: var(--body-font) !important;
 }
@@ -132,7 +128,7 @@ body {
 a {
   color: var(--BFI-white);
 }
-.header--case {
+.header__case {
   display: flex;
   justify-content: flex-start;
   h2 {
@@ -147,46 +143,7 @@ a {
   width: 100vw;
   padding: 3rem 15vw;
 }
-.zelda--aqua {
-  background-color: #408ea2;
-}
-.zelda--padding {
-  width: 100%;
-  padding-right: 50%;
-}
-.zelda--header-pad {
-  width: 100%;
-  margin-right: auto;
-}
-.zelda--lineheight {
-  line-height: 1.5rem;
-}
-.zelda--text {
-  border: none;
-  font-size: 1.5rem;
-  line-height: 2.1rem;
-  &.resetA {
-    text-align: left;
-  }
-  &.small {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
 
-    &.size--bump {
-      font-size: 1.3rem;
-    }
-    &.extrasmall {
-      font-size: 1rem;
-    }
-  }
-
-  &.white {
-    color: var(--BFI-white);
-  }
-}
-#zeldaPFormat {
-  width: 80%;
-}
 .nopad {
   padding: 0% !important;
 }
@@ -271,10 +228,10 @@ text {
   font-size: clamp(40px, 6vw, 3rem) !important;
   display: block !important;
 }
-.force--header {
+.force__header {
   font-family: var(--header-font) !important;
 }
-.home--link {
+.home__link {
   position: fixed !important;
   z-index: 90;
   top: 0;
@@ -299,27 +256,8 @@ text {
     height: 15vh;
   }
 }
-.icon--break {
-  aspect-ratio: 1/1;
-  min-width: 100px;
-  width: 8vw;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  background-image: url("./src/images/icons/logoIcon.png");
-  background-size: cover;
-  background-position: center;
-}
 
-#abso {
-  position: absolute;
-  z-index: 99;
-  bottom: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  border: 1px solid black;
-}
-.scroll--arrow {
+.scroll__arrow {
   position: absolute;
   bottom: -30px;
   // IS LEFT BECAUSE PARENT FLIPPED HOIZONTALLY
@@ -329,7 +267,7 @@ text {
   background-image: url("./src/images/icons/arrow.png");
   background-size: cover;
 }
-.scroll--arrow2 {
+.scroll__arrow2 {
   position: sticky;
   top: calc(100% - 40px);
   right: 0px;
@@ -344,7 +282,7 @@ text {
   background-image: url("./src/images/icons/arrow.png");
   background-size: cover;
 }
-.download--icon {
+.download__icon {
   position: absolute;
   bottom: min(5%, 40px);
   right: min(5%, 40px);
@@ -390,26 +328,6 @@ text {
   }
 }
 
-.waved--professional-header {
-  border: 3px solid;
-  border-image-source: linear-gradient(-90deg, transparent, white);
-  border-image-slice: 1;
-  color: var(--BFI-white);
-  margin-right: auto;
-  margin-left: 10vw;
-  min-width: 50vw;
-  padding-left: 0.5rem;
-  &.noBorder {
-    border: none;
-  }
-}
-.wavey--words {
-  background-image: url("./src/images/icons/bigfishdemopaintstriperot.png");
-  background-size: 105% 90%;
-  background-position: 160%;
-  background-repeat: no-repeat;
-  padding: 0.5% 2%;
-}
 .sticky {
   position: sticky;
   top: 0;
@@ -437,7 +355,7 @@ html {
   flex-direction: column;
   align-items: center;
 }
-.site--shell {
+.site__shell {
   position: relative;
   width: 100vw;
   height: -moz-fit-content;

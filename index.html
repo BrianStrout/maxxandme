@@ -7,25 +7,51 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div id="site--shell">
+    <div id="site__shell">
       <header>
-        <nav>
+        <nav class="active">
           <ul id="navigation">
             <li>The Dogs</li>
             <li>Adopt & Foster</li>
+            <li class="logo mobile__hide">logo</li>
             <li>Donate and help us</li>
             <li>Get In Touch</li>
           </ul>
+
+          <button
+            id="hamburger"
+            class="button-three"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <svg
+              stroke="var(--button-color)"
+              fill="none"
+              class="hamburger"
+              viewBox="0 0 100 100"
+              width="130"
+            >
+              <path
+                class="line"
+                stroke-width="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+              ></path>
+            </svg>
+          </button>
         </nav>
+        <div class="subheader">
+          Maxx & Me Pet Rescue is a dog rescue organization founded in 2014 by
+          Lea Haverstock in memory of her beloved rescue Golden Retriever, Maxx.
+          We are dedicated to the well-being and deserving care of animals –
+          large and small, young and old, healthy and in need. We are a 100%
+          volunteer, foster-based, canine and feline rescue and adoption
+          organization serving the greater Tampa Bay area. We do not do out of
+          state adoptions.
+        </div>
       </header>
-      <div class="subheader">
-        Maxx & Me Pet Rescue is a dog rescue organization founded in 2014 by Lea
-        Haverstock in memory of her beloved rescue Golden Retriever, Maxx. We
-        are dedicated to the well-being and deserving care of animals – large
-        and small, young and old, healthy and in need. We are a 100% volunteer,
-        foster-based, canine and feline rescue and adoption organization serving
-        the greater Tampa Bay area. We do not do out of state adoptions.
-      </div>
+
       <div class="grid3">
         <div class="grid">
           <div class="dog--shell">
@@ -42,3 +68,4 @@
     </div>
   </body>
 </html>
+<script src="./index.js" type="module"></script>
