@@ -610,6 +610,10 @@ h6 {
   .pad--top-36 {
     padding-top: 0;
   }
+  .grid3 {
+    grid-template-columns: 100% !important;
+  }
+
   .grid2 {
     display: grid;
     grid-template-columns: 100% !important;

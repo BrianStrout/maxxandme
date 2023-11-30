@@ -16,7 +16,9 @@
 }
 
 .grid3 {
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2%;
+  padding: 2%;
 }
 
 .grid2,
@@ -96,6 +98,18 @@
   background-image: url("./src/images/istockphoto-157653757-1024x1024.jpg");
   aspect-ratio: 1/1;
   background-size: cover;
+}
+.dog--shell .details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.dog--shell .details .quick {
+  display: flex;
+}
+.dog--shell .details .quick span {
+  display: inline;
 }
 
 header {
@@ -959,6 +973,9 @@ h6 {
   }
   .pad--top-36 {
     padding-top: 0;
+  }
+  .grid3 {
+    grid-template-columns: 100% !important;
   }
   .grid2 {
     display: grid;

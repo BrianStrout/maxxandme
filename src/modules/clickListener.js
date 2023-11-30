@@ -1,3 +1,5 @@
+import { dogModal } from "./launchDogModal.js";
+
 const arrayOfMenuLinks = Array.from(
   document.querySelectorAll("li.menu__links")
 );
@@ -36,6 +38,9 @@ const clicker = (target) => {
       case "  linkToContact":
         break;
     }
+  }
+  if (target.classList.contains("learn--about-me")) {
+    dogModal(target);
   }
 };
 

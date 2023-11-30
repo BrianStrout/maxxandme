@@ -2,7 +2,9 @@
   grid-template-columns: 50% 50%;
 }
 .grid3 {
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2%;
+  padding: 2%;
 }
 
 .grid2,
@@ -78,5 +80,19 @@
     background-image: url("./src/images/istockphoto-157653757-1024x1024.jpg");
     aspect-ratio: 1/1;
     background-size: cover;
+  }
+
+  .details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    .quick {
+      display: flex;
+
+      span {
+        display: inline;
+      }
+    }
   }
 }
