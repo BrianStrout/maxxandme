@@ -1,4 +1,5 @@
-import { dogModal } from "./launchDogModal.js";
+import { launchDogModal } from "./launchDogModal.js";
+import { contentUpdate } from "./contentUpdate.js";
 
 const arrayOfMenuLinks = Array.from(
   document.querySelectorAll("li.menu__links")
@@ -26,21 +27,10 @@ const clicker = (target) => {
     }
   }
   if (target.classList.contains("menu__links")) {
-    switch (target.id) {
-      case "linkToDogs":
-        console.log("hit");
-        break;
-      case " linkToAction":
-        break;
-
-      case "linkToHelp":
-        break;
-      case "  linkToContact":
-        break;
-    }
+    contentUpdate(target.id);
   }
   if (target.classList.contains("learn--about-me")) {
-    dogModal(target);
+    launchDogModal(target);
   }
 };
 

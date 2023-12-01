@@ -75,6 +75,7 @@
   background-color: chocolate;
   > div {
     width: 100%;
+    user-select: none;
   }
   .headshot {
     background-image: url("./src/images/istockphoto-157653757-1024x1024.jpg");
@@ -89,9 +90,17 @@
     padding: 0 5px;
     .quick {
       display: flex;
+      justify-content: space-between;
+      gap: 5px;
 
       span {
         display: inline;
+      }
+    }
+    .learn--about-me {
+      text-decoration: underline;
+      &:hover {
+        scale: 1.1;
       }
     }
   }

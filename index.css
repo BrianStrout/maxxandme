@@ -93,6 +93,9 @@
 }
 .dog--shell > div {
   width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .dog--shell .headshot {
   background-image: url("./src/images/istockphoto-157653757-1024x1024.jpg");
@@ -107,9 +110,17 @@
 }
 .dog--shell .details .quick {
   display: flex;
+  justify-content: space-between;
+  gap: 5px;
 }
 .dog--shell .details .quick span {
   display: inline;
+}
+.dog--shell .details .learn--about-me {
+  text-decoration: underline;
+}
+.dog--shell .details .learn--about-me:hover {
+  scale: 1.1;
 }
 
 header {
@@ -132,8 +143,7 @@ header nav {
 header nav ul {
   width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 5%;
+  justify-content: space-evenly;
 }
 header nav ul li {
   font-size: 2rem;
@@ -1006,4 +1016,84 @@ h6 {
   .ind {
     margin-left: 2rem;
   }
+}
+#dogModal {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  background-color: darkblue;
+}
+
+#contactForm,
+#adoptionForm,
+#fosterForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  padding: 1rem 0px;
+  margin: auto;
+  margin-top: 8px;
+  animation: popInFromLeft 0.5s ease-in;
+}
+#contactForm > .form-group,
+#adoptionForm > .form-group,
+#fosterForm > .form-group {
+  display: flex;
+  align-content: flex-start;
+  margin: 0.5rem 0px;
+  flex-direction: column;
+}
+#contactForm > .form-group > label,
+#adoptionForm > .form-group > label,
+#fosterForm > .form-group > label {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: var(--header-font);
+  color: var(--BFI-white);
+  font-size: 1rem;
+}
+#contactForm > .form-group input,
+#contactForm > .form-group textarea,
+#adoptionForm > .form-group input,
+#adoptionForm > .form-group textarea,
+#fosterForm > .form-group input,
+#fosterForm > .form-group textarea {
+  width: 100%;
+  max-width: 520px;
+  line-height: 1.5rem;
+}
+#contactForm > .form-group input::after,
+#contactForm > .form-group textarea::after,
+#adoptionForm > .form-group input::after,
+#adoptionForm > .form-group textarea::after,
+#fosterForm > .form-group input::after,
+#fosterForm > .form-group textarea::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "content time";
+}
+#contactForm #submit,
+#adoptionForm #submit,
+#fosterForm #submit {
+  bottom: -60px;
+  left: calc(50% - 10px);
+  width: 80px;
+  height: 35px;
+  font-size: 1rem;
+  font-family: var(--header-font);
+  background-color: var(--BFI-white);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+}
+#contactForm #submit:hover,
+#adoptionForm #submit:hover,
+#fosterForm #submit:hover {
+  scale: 1.35;
 }/*# sourceMappingURL=index.css.map */
